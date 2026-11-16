@@ -1,6 +1,6 @@
 # Custom Quote Engine
 
-** not currently finished
+** incomplete
 
 a standalone cargo project -- not compile-ready
 
