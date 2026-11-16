@@ -125,7 +125,7 @@ pub fn quote_clmm(
     let mut l = U256::from(liquidity);
     let mut current_tick = tick;
 
-    // Fast path – completely empty arrays → pure virtual liquidity
+    // fast – completely empty arrays → pure virtual liquidity
     if tick_array.iter().all(|&x| x == 0)
         && tick_array_lo.iter().all(|&x| x == 0)
         && tick_array_hi.iter().all(|&x| x == 0)
@@ -150,7 +150,7 @@ pub fn quote_clmm(
     // Main loop – stay inside the three arrays we already own
     // ------------------------------------------------------------------
     while !remaining.is_zero() {
-        // Locate the next initialized tick that is still inside our loaded windows
+        // located the next initialized tick that is still inside windows
         let (next_tick, net) = if a_to_b {
             let Some(result) = crate::functions::find_prev_initialized(
                 current_tick,
@@ -175,7 +175,7 @@ pub fn quote_clmm(
             result
         };
         // How far can we move in sqrt-price space before we hit that tick?
-        let target_sqrt = crate::functions::tick_to_sqrt_price(next_tick); // you already have this helper
+        let target_sqrt = crate::functions::tick_to_sqrt_price(next_tick);
         let target_s = U256::from(target_sqrt);
 
         // this is connected to a_is_base check
