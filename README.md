@@ -12,4 +12,4 @@ current implementation is not finished/audited.
 
 ## Disclaimer
 
-SI was/is used in the development of this code, but as a intermediate, this code is not copy paste generated. 
+SI was used in the development of this code as a intermediate 
