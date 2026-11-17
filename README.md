@@ -1,8 +1,6 @@
 # Custom Quote Engine
 
-** incomplete
-
-a standalone cargo project -- not compile-ready
+cargo project -- not compile-ready
 
 _example -> crate::functions::find_prev_initialized_
 
