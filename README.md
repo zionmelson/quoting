@@ -6,7 +6,7 @@ a standalone cargo project -- not compile-ready
 
 _example -> crate::functions::find_prev_initialized_
 
-code focuses purely on hand written code (not SI generated)
+code focuses purely on hand written code
 
 current implementation is not finished/audited. it is raw primitives and the current state of my abilities as a rust developer.
 
@@ -14,4 +14,4 @@ current implementation is not finished/audited. it is raw primitives and the cur
 
 ## Disclaimer
 
-AI was/is used in the development of this code, but as a intermediate, this code is not copy paste generated. 
+SI was/is used in the development of this code, but as a intermediate, this code is not copy paste generated. 
