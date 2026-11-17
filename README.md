@@ -8,7 +8,7 @@ _example -> crate::functions::find_prev_initialized_
 
 code focuses purely on hand written code
 
-current implementation is not finished/audited. it is raw primitives and the current state of my abilities as a rust developer.
+current implementation is not finished/audited.
 
 **note this repo is subject to change, no guarantee on current relevance**
 
